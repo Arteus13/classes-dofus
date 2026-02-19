@@ -328,12 +328,13 @@ img {
   body {
     padding: 0;
     margin: 0;
+    background-size: cover;
   }
 
   h1 {
     font-size: 1.8rem;
     margin: 10px 0 20px 0;
-    padding: 0 10px;
+    padding: 0 0px;
   }
 
   /* --- GRID --- */
@@ -373,18 +374,18 @@ img {
 
   /* --- ROLES --- */
   .roles-with-icons {
-    gap: 25px;
+    gap: 40px;
     justify-content: center;
   }
 
   .role-icon {
-    width: 55px;
-    height: 55px;
+    width: 100px !important;
+    height: 100px !important;
   }
 
   .tag {
     font-size: 0.8rem;
-    padding: 4px 8px;
+    padding: 40px 8px;
   }
 
   /* --- DIFFICULTÉ --- */
@@ -445,6 +446,7 @@ img {
     width: 34px;
     height: 34px;
     font-size: 1rem;
+    color: white;
   }
 
   .btn-details {
