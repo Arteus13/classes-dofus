@@ -1,0 +1,427 @@
+body {
+  background-image: url('/assets/backgrounds/dofus_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #e0f7ff;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 30px;
+  color: #aee9f7;
+  text-shadow: 0 0 10px #2c3e50;
+  text-align: center; 
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  border-left-width: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.card {
+  background: rgba(26, 31, 42, 0.9);
+  border: 2px solid #3c4c5f;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px #000;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #3c4c5f;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.class-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.card-header h2 {
+  margin: 0;
+  color: #aee9f7;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #cfeaf5;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.info-row {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roles-with-icons {
+  display: flex;
+  gap: 100px;
+}
+
+.role-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.role-icon {
+  width: 100px;      
+  height: 100px;
+  margin-bottom: 4px;
+  object-fit: contain;
+}
+
+.tag {
+  background: #2e3a4d;
+  border: 1px solid #3c4c5f;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #aee9f7;
+}
+
+.difficulty {
+  font-weight: bold;
+  color: #aee9f7;
+}
+
+.btn-details,
+.btn-close {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #4c6fa3;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.btn-details:hover,
+.btn-close:hover {
+  background: #6fa7d3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 20, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.details-panel {
+  background: #1a1f2a;
+  border: 3px solid #3c4c5f;
+  border-radius: 12px;
+  padding: 25px;
+  width: 1000px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 25px #000;
+}
+
+
+
+.details-panel h2 {
+  color: #aee9f7;
+  margin-bottom: 20px;
+}
+
+.details-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+/* ----------------------------- */
+/*           SORTS               */
+/* ----------------------------- */
+
+.sort-item {
+  background: #2a3242;
+  border: 2px solid #3c4c5f;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.sort-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #aee9f7;
+}
+
+.spell-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.sort-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.35s ease;
+}
+
+/* --- CLIC (PC + MOBILE) : instantané --- */
+.sort-item.open .sort-details {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- AUCUN HOVER NULLE PART --- */
+/* (on supprime totalement le hover pour éviter tout conflit) */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-column {
+  background: rgba(26, 31, 42, 0.7);
+  border: 2px solid #3c4c5f;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  align-self: flex-start;
+  flex: 0 0 300px;
+}
+
+.skin-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.nav-arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* permet de cliquer à travers */
+}
+
+.arrow-btn {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  pointer-events: auto; /* réactive le clic sur l'image */
+  transition: transform 0.2s ease;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.1);
+}
+
+.arrow-btn.left {
+  margin-left: 20px;
+}
+
+.arrow-btn.right {
+  margin-right: 20px;
+}
+.details-panel {
+  position: relative; /* indispensable pour que le bouton se place dedans */
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4c6fa3;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  z-index: 20; /* au-dessus des sorts et skins */
+}
+
+.btn-close:hover {
+  background: #6fa7d3;
+}
+
+.details-difficulty {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.star-icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
+}
+
+
+
+/* ----------------------------- */
+/*           TABLETTE            */
+/* ----------------------------- */
+
+@media (max-width: 1200px) { 
+  .grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+}
+
+/* ----------------------------- */
+/*            MOBILE             */
+/* ----------------------------- */
+
+@media (max-width: 600px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    border-left-width: 20px;
+    margin: 0px;
+  }
+
+  .card {
+    padding: 12px;
+    border-radius: 10px;
+    padding-bottom: 24px;
+
+  }
+  .star-icon { 
+    width: 18px;
+     height: 18px;
+      margin-left: 6px; 
+  }
+  .class-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .role-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .spell-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .card-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .btn-details,
+  .btn-close {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+    white-space: normal;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .details-layout {
+    flex-direction: column;
+  }
+
+  .right-column {
+    width: 100%;
+    flex: none;
+    margin-top: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .skin-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .details-panel {
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .nav-arrows { 
+    display: none; 
+  }
+
+  .btn-close { 
+    top: 6px; 
+    right: 6px; 
+    width: 32px; 
+    height: 32px; 
+    font-size: 1rem; 
+    background: #4c6fa3; 
+  }
+  .nav-arrows { 
+    display: none;
+  }
+}

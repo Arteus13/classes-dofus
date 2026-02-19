@@ -1,0 +1,1518 @@
+[
+  {
+    "id": 1,
+    "nom": "Iop",
+    "titre": "Guerrier Téméraire",
+    "difficulte": 1,
+    "roles": ["Dégats", "Amélioration", "Placement"],
+    "roles_url" : ["/assets/roles/degats.png","/assets/roles/amelioration.png", "/assets/roles/placement.png"],
+    "logo_url" :"/assets/logo_classes/logo_iop.png",
+    "skins" : ["/assets/skins/iop.png"],
+    "description" : "Les Iops sont des guerriers fonceurs et sans reproche ! Une chose est sûre : les Iops savent faire parler les armes. D’ailleurs, se retrouver pris dans une bagarre au moins une fois par jour est pour eux un signe de bonne santé. Leur tempérament impétueux fait des Iops des paladins de l’extrême, capables du meilleur… comme du pire !",
+    "sorts_principaux" : [
+      {
+      "nom" : "Pression",
+      "logo_sort" : "/assets/logo_sort/Iop/pression.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4",
+      "critique" : "10%",
+      "effets": "Érode la cible et occasionne des dommages Terre.",
+        "stats": {
+          "dommages : ": "16 à 18 (Terre)",
+          "érosion : " : "10% (2 tours)",
+          "dommages_critiques : ": "19 à 21 (Terre)"
+        }
+      },
+      {
+      "nom" : "Ferveur",
+      "logo_sort" : "/assets/logo_sort/Iop/ferveur.png",
+      "cout_pa": 2,
+      "portee" : "0 - 3",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Eau aux ennemis et applique un bouclier sur le lanceur et ses alliés en zone.",
+        "stats": {
+          "dommages : ": "9 à 11 (Eau)",
+          "bouclier : ": "50% du niveau (2 tours)",
+          "dommages_critiques : ": "12 à 14 (Eau)"
+        }
+      },
+      {
+      "nom" : "Couperet",
+      "logo_sort" : "/assets/logo_sort/Iop/couperet.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Feu et retire des PM en zone.",
+        "stats": {
+          "dommages : ": "17 à 19 (Feu)",
+          "zone_pm : ": "-2 PM (1 tour)",
+          "dommages_critiques : " : "20 à 23 (Feu)"
+        }
+      },
+      {
+      "nom" : "Épée Divine",
+      "logo_sort" : "/assets/logo_sort/Iop/epee_divine.png",
+      "cout_pa": 3,
+      "portee" : "0 - 3",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Air aux ennemis et augmente les Dommages du lanceur et des alliés en zone.",
+        "stats": {
+          "dommages : ": "14 à 17 (Air)",
+          "buff : ": " + 10 dommages (4 tours)",
+          "dommages_critiques : ": "18 à 21 (Air)"
+        }
+      },
+      {
+      "nom" : "Intimidation",
+      "logo_sort" : "/assets/logo_sort/Iop/intimidation.png",
+      "cout_pa": 2,
+      "portee" : "1 - 2",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages dans le meilleur élément du lanceur aux ennemis et repousse la cible.",
+        "stats": {
+          "dommages : ": "4 à 6 (Meilleur élément)",
+          "repousse : ": "Repousse de 2 cases",
+          "dommages_critiques : ": "7 à 9 (Meilleur élément)"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nom": "Crâ",
+    "titre": "Archer",
+    "difficulte": 1,
+    "roles": ["Dégats", "Entrave", "Amélioration"],
+    "roles_url" : ["/assets/roles/degats.png","/assets/roles/entrave.png", "/assets/roles/amelioration.png"],
+    "logo_url" :"/assets/logo_classes/logo_cra.png",
+    "skins" : ["/assets/skins/cra.png"],
+    "description" : "Les Crâs sont des archers aussi fiers que précis ! Ils font des alliés précieux contre les adeptes de la mêlée franche. Restant à distance, décochant leurs traits empennés dans le moindre orifice laissé sans surveillance, ils ne laissent aucun répit à leurs adversaires !",
+    "sorts_principaux" : [
+      {
+      "nom" : "Flèche Optique",
+      "logo_sort" : "/assets/logo_sort/Cra/fleche_optique.png",
+      "cout_pa": 3,
+      "portee" : "0 - 8 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Air et vole de la Portée aux ennemis ou augmente la Portée de l'allié ciblé.",
+        "stats": {
+          "dommages : ": "14 à 16 (Air)",
+          "vol_portée : ": "Vol 3 Portée (1 tour)",
+          "portée : ": "+ 3 Portée (1 tour)",
+          "dommages_critiques : ": "17 à 19 (Air)"
+        }
+      },
+      {
+      "nom" : "Flèche Glacée",
+      "logo_sort" : "/assets/logo_sort/Cra/fleche_glacee.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Eau et retire des PA.",
+        "stats": {
+          "dommages : ": "14 à 17 (Eau)",
+          "nerf : ": "-2 PA (1 tours)",
+          "dommages_critiques : ": "18 à 21 (Eau)"
+        }
+      },
+      {
+      "nom" : "Tir Répulsif",
+      "logo_sort" : "/assets/logo_sort/Cra/tir_repulsif.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Feu aux ennemis et repousse les cibles en zone.",
+        "stats": {
+          "dommages : ": "17 à 19 (Feu)",
+          "repousse : ": "Repousse de 1 cases",
+          "dommages_critiques : ": "20 à 23 (Feu)"
+        }
+      },
+      {
+      "nom" : "Flèche Cinglante",
+      "logo_sort" : "/assets/logo_sort/Cra/fleche_cinglante.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Terre aux ennemis et repousse la cible.",
+        "stats": {
+          "dommages : ": "15 à 17 (Terre)",
+          "repousse : ": "Repousse de 2 cases",
+          "dommages_critiques : ": "18 à 21 (Terre)"
+        }
+      },
+      {
+      "nom" : "Flèche de Dispersion",
+      "logo_sort" : "/assets/logo_sort/Cra/fleche_de_dispersion.png",
+      "cout_pa": 2,
+      "portee" : "1 - 8 (modifiable)",
+      "effets": "Repousse les cibles depuis le centre de la zone.",
+        "stats": {
+          "repousse : ": "Repousse de 2 cases"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nom": "Sacrieur",
+    "titre": "Berseker",
+    "difficulte": 1,
+    "roles": ["Tank", "Dégats", "Placement"],
+    "roles_url" : ["/assets/roles/tank.png","/assets/roles/degats.png", "/assets/roles/placement.png"],
+    "logo_url" :"/assets/logo_classes/logo_sacrieur.png",
+    "skins" : ["/assets/skins/sacrieur.png"],
+    "description" : "Les Sacrieurs sont des berserkers qui décuplent leurs forces dès qu'ils sont frappés ! N'ayant pas peur de recevoir des coups, ni de s'exposer aux blessures, ils seront souvent en première ligne, prêts à verser le premier sang ! Le Sacrieur est vraiment le compagnon idéal pour vos longues soirées guerrières...",
+    "sorts_principaux" : [
+      {
+      "nom" : "Absorption",
+      "logo_sort" : "/assets/logo_sort/Sacrieur/absorption.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6",
+      "critique" : "15%",
+      "effets": "Vole de la vie dans l'élément Feu et retire de la Puissance aux ennemis ou transfère une partie de la vie du lanceur à l'allié ciblé.",
+        "stats": {
+          "dommages : ": "12 à 14 (vol Feu)",
+          "nerf : ": "- 50 puissance (1 tour)",
+          "buff : ": "Transfère 6% des PV",
+          "dommages_critiques : ": "15 à 17 (vol Feu)",
+          "buff_critiques : " : "Transfère 8% des PV"
+        }
+      },
+      {
+      "nom" : "Hémorragie",
+      "logo_sort" : "/assets/logo_sort/Sacrieur/hemorragie.png",
+      "cout_pa": 3,
+      "portee" : "1",
+      "critique" : "15%",
+      "effets": "Réduit les soins reçus par la cible et vole de la vie dans l'élément Air.",
+        "stats": {
+          "dommages : ": "13 à 16 (vol Air)",
+          "buff : ": "Soins reçus x70%",
+          "dommages_critiques : ": "17 à 20 (vol Air)"
+        }
+      },
+      {
+      "nom" : "Supplice",
+      "logo_sort" : "/assets/logo_sort/Sacrieur/supplice.png",
+      "cout_pa": 3,
+      "portee" : "1",
+      "critique" : "15%",
+      "effets": "Vole de la vie dans l'élément Terre. Les entités qui attaquent la cible sont soignées d'une partie des dommages occasionnés.",
+        "stats": {
+          "dommages : ": "13 à 16 (vol Terre)",
+          "buff : ": "Soin sur l'attaquant : 20% des dommages",
+          "dommages_critiques : ": "17 à 20 (vol Terre)"
+        }
+      },
+      {
+      "nom" : "Stase",
+      "logo_sort" : "/assets/logo_sort/Sacrieur/stase.png",
+      "cout_pa": 3,
+      "portee" : "1 - 5",
+      "critique" : "15%",
+      "effets": "Vole de la vie dans l'élément Eau et réduit les chances de Critique.",
+        "stats": {
+          "dommages : ": "12 à 14 (vol Eau)",
+          "nerf : ": "-10% Critique (1 tour) ",
+          "dommages_critiques : ": "15 à 17 (vol Eau)"
+        }
+      },
+      {
+      "nom" : "Attirance",
+      "logo_sort" : "/assets/logo_sort/Sacrieur/attirance.png",
+      "cout_pa": 2,
+      "portee" : "2 - 8",
+      "effets": "Attire la cible. L'attirance est plus importante et la portée maximale du sort est augmentée de 4 si le lanceur est en Souffrance 6 ou plus.",
+        "stats": {
+          "attire : ": "Attire de 7 cases",
+          "attire_avec_souffrance : ": "Attire de 11 cases"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nom": "Eniripsa",
+    "titre": "Guérisseur",
+    "difficulte": 1,
+    "roles": ["Soins", "Amélioration", "Entrave"],
+    "roles_url" : ["/assets/roles/soins.png","/assets/roles/amelioration.png", "/assets/roles/entrave.png"],
+    "logo_url" :"/assets/logo_classes/logo_eniripsa.png",
+    "skins" : ["/assets/skins/eniripsa.png"],
+    "description" : "Les Eniripsas sont des guérisseurs qui soignent d'un simple Mot. Ils utilisent le pouvoir de la parole pour soulager les souffrances de leurs alliés, mais parfois aussi pour blesser leurs ennemis. Certains Eniripsas sont même devenus de véritables arpenteurs du verbe, des rôdeurs des langues oubliées.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Mot Espiègle",
+      "logo_sort" : "/assets/logo_sort/Eniripsa/mot_espiegle.png",
+      "cout_pa": 3,
+      "portee" : "1 - 5 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Air et retire des PM.",
+        "stats": {
+          "dommages : ": "12 à 14 (Air)",
+          "nerf : ": "- 2 PM (1 tour)",
+          "dommages_critiques : ": "15 à 17 (Air)"
+        }
+      },
+      {
+      "nom" : "Mot Tapageur",
+      "logo_sort" : "/assets/logo_sort/Eniripsa/mot_tapageur.png",
+      "cout_pa": 3,
+      "portee" : "0 - 3 (modifiable)",
+      "critique" : "10%",
+      "effets": "Soigne les alliés et occasionne des dommages Feu aux ennemis en zone.",
+        "stats": {
+          "dommages : ": "12 à 14 (Feu)",
+          "buff : ": "12 à 14 soins Feu",
+          "dommages_critiques : ": "15 à 17 (Feu)",
+          "buff_critiques : ": "15 à 17 soins Feu"
+        }
+      },
+      {
+      "nom" : "Mot Vampirique",
+      "logo_sort" : "/assets/logo_sort/Eniripsa/mot_vampirique.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Vole de la vie dans l'élément Eau aux ennemis ou transfère une partie de la vie du lanceur à l'allié ciblé.",
+        "stats": {
+          "dommages : ": "16 à 18 (Eau)",
+          "buff : ": "Transfère 8% des PV",
+          "dommages_critiques : ": "19 à 21 (Eau)",
+          "buff_critiques : ": "Transfère 10% des PV"
+        }
+      },
+      {
+      "nom" : "Juron",
+      "logo_sort" : "/assets/logo_sort/Eniripsa/juron.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Terre aux ennemis et repousse la cible.",
+        "stats": {
+          "dommages : ": "14 à 16 (Terre)",
+          "repousse : ": "Repousse de 2 cases",
+          "dommages_critiques : ": "17 à 19 (Terre)"
+        }
+      },
+      {
+      "nom" : "Mot d'Amitié",
+      "logo_sort" : "/assets/logo_sort/Eniripsa/mot_d_amitie.png",
+      "cout_pa": 3,
+      "portee" : "1 - 3",
+      "effets": "Invoque un Lapino maîtrisable qui peut soigner ou appliquer un bouclier. Le Lapino peut également se transformer s'il est dans l'état Contrôlé pour occasionner des dommages. À sa mort, le temps de relance du sort est fixé à 2 tours et pose un glyphe sous le Lapino. Si le Lapino est encore en vie et que le sort est relancé, il est téléporté et immobilisé sur la case ciblée.",
+        "stats": {
+          "invocation : ": "Invoque 1 Lapino",
+          "particulier : ": "À sa mort, le temps de relance est fixé à 2 tours et pose un glyphe sous le Lapino.",
+          "relance_active : ": "Si le Lapino est en vie lors de la relance, il est téléporté et immobilisé (-100 PM) sur la case ciblée."
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nom": "Ouginak",
+    "titre": "Barbare",
+    "difficulte": 2,
+    "roles": ["Dégats", "Tank", "Entrave"],
+    "roles_url" : ["/assets/roles/degats.png","/assets/roles/tank.png", "/assets/roles/entrave.png"],
+    "logo_url" :"/assets/logo_classes/logo_ouginak.png",
+    "skins" : ["/assets/skins/ouginak.png"],
+    "description" : "Quand on est un barbare avec un caractère de chienchien, il faut savoir montrer les crocs pour se faire respecter. Le regard fier, le poil brillant, la truffe humide : c'est ainsi que l'Ouginak traverse les épreuves et triomphe de l'adversité. Traquer ses proies sans relâche, laisser éclater sa rage pour écraser ses ennemis, les voir mourir devant soi et entendre les miaulements terrorisés de leurs chachas... Voilà une vie digne d'être vécue !",
+    "sorts_principaux" : [
+      {
+      "nom" : "Molosse",
+      "logo_sort" : "/assets/logo_sort/Ouginak/molosse.png",
+      "cout_pa": 3,
+      "portee" : "1 - 2",
+      "critique" : "20%",
+      "effets": "Occasionne des dommages Terre aux ennemis et réduit les dommages subis par le lanceur. Augmente la Rage (nécessite une cible).",
+        "stats": {
+          "dommages : ": "18 à 20 (Terre)",
+          "nerf : ": "Dommages subis x90% (1 tour)",
+          "rage : ":"+ 1 Rage",
+          "dommages_critiques : ": "22 à 24 (Terre)"
+      
+        }
+      },
+      {
+      "nom" : "Os à Moelle",
+      "logo_sort" : "/assets/logo_sort/Ouginak/os_a_moelle.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Eau. Les dommages du sort sont augmentés après chaque lancer si la cible est la Proie.",
+        "stats": {
+          "dommages : ": "12 à 14 (Eau)",
+          "buff : ": "Os à Moelle : +4 dégâts de base (3 tours)",
+          "dommages_critiques : ": "15 à 17 (Eau)"
+        }
+      },
+      {
+      "nom" : "Charogne",
+      "logo_sort" : "/assets/logo_sort/Ouginak/charogne.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4",
+      "critique" : "20%",
+      "effets": "Érode la cible et occasionne des dommages Air. Augmente la Rage (nécessite une cible).",
+        "stats": {
+          "dommages : ": "18 à 20 (Air)",
+          "érosion : ": "10% (2 tours)",
+          "rage : ":"+ 1 Rage",
+          "dommages_critiques : ": "22 à 24 (Air)"
+        }
+      },
+      {
+      "nom" : "Traque",
+      "logo_sort" : "/assets/logo_sort/Ouginak/traque.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Feu. Rapproche le lanceur vers la cible avant d'appliquer les effets si c'est la Proie. Le sort n'est pas soumis aux contraintes de lancer sous Forme Bestiale.",
+        "stats": {
+          "dommages : ": "19 à 21 (Feu)",
+          "avance : ": "Avance de 5 cases",
+          "dommages_critiques : ": "22 à 25 (Feu)"
+        }
+      },
+      {
+      "nom" : "Proie",
+      "logo_sort" : "/assets/logo_sort/Ouginak/proie.png",
+      "cout_pa": 1,
+      "portee" : "1 - 6",
+      "effets": "Applique l'état Proie sur l'ennemi ciblé. Les entités qui attaquent la cible sont soignées d'une partie des dommages occasionnés. Fixe le temps de relance du sort à 0 si la Proie est achevée.",
+        "stats": {
+          "état : ": "État Proie (infini)",
+          "soin : ": "Soin sur l'attaquant : 15% des dommages"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nom": "Féca",
+    "titre": "Protecteur",
+    "difficulte": 2,
+    "roles": ["Protéction", "Tank", "Entrave"],
+    "roles_url" : ["/assets/roles/protection.png","/assets/roles/tank.png", "/assets/roles/entrave.png"],
+    "logo_url" :"/assets/logo_classes/logo_feca.png",
+    "skins" : ["/assets/skins/feca.png"],
+    "description" : "Les Fécas sont de loyaux protecteurs toujours sur la défensive. Ils sont appréciés dans les groupes d'aventuriers pour leurs armures élémentaires et leur capacité à encaisser les coups durs. Ils sont également maîtres dans l'art des signes magiques : quand il va y avoir du grabuge, les Fécas sortent leurs glyphes !",
+    "sorts_principaux" : [
+      {
+      "nom" : "Retour du Bâton",
+      "logo_sort" : "/assets/logo_sort/Feca/retour_du_baton.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "15%",
+      "effets": "Retire de la Force et de la Fuite et occasionne des dommages Terre.",
+        "stats": {
+          "dommages : ": "17 à 20 (Terre)",
+          "nerf 1 : ": "-40 Force (3 tours)",
+          "nerf 2 : ": "-10 Fuite (3 tours)",
+          "dommages_critiques : ": "21 à 24 (Terre)"
+        }
+      },
+      {
+      "nom" : "Langueur",
+      "logo_sort" : "/assets/logo_sort/Feca/langueur.png",
+      "cout_pa": 3,
+      "portee" : "1 - 5 (modifiable)",
+      "critique" : "15%",
+      "effets": "Retire de l'Intelligence, réduit les chances de Critique et occasionne des dommages Feu.",
+        "stats": {
+          "dommages : ": "16 à 18 (Feu)",
+          "nerf 1 : ": "-40 Intelligence (3 tours)",
+          "nerf 2 : " : "-5% Critique (3 tours)",
+          "dommages_critiques : ": "19 à 21 (Feu)"
+        }
+      },
+      {
+      "nom" : "Nimbus",
+      "logo_sort" : "/assets/logo_sort/Feca/nimbus.png",
+      "cout_pa": 3,
+      "portee" : "0 - 4 (modifiable)",
+      "critique" : "15%",
+      "effets": "Retire de la Chance et du Tacle et occasionne des dommages Eau aux ennemis en zone.",
+        "stats": {
+          "dommages : ": "13 à 15 (Eau)",
+          "nerf 1 : ": "-40 Chance (3 tours)",
+          "nerf 2 : ":"-5 Tacle (3 tours)",
+          "dommages_critiques : ": "16 à 18 (Eau)"
+        }
+      },
+      {
+      "nom" : "Typhon",
+      "logo_sort" : "/assets/logo_sort/Feca/typhon.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "15%",
+      "effets": "Retire de l'Agilité et des Dommages et occasionne des dommages Air aux ennemis en zone.",
+        "stats": {
+          "dommages : ": "15 à 17 (Air)",
+          "nerf 1 : ": "-40 Agilité (3 tours)",
+          "nerf 2 : ": "-5 Dommages (3 tours)",
+          "dommages_critiques : ": "18 à 20 (Air)"
+        }
+      },
+      {
+      "nom" : "Rempart",
+      "logo_sort" : "/assets/logo_sort/Feca/rempart.png",
+      "cout_pa": 2,
+      "portee" : "0",
+      "effets": "Réduit les dommages reçus par le lanceur et ses alliés en zone.",
+        "stats": {
+          "nerf : ":"-8 Dommages reçus" 
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nom": "Enutrof",
+    "titre": "Chasseur de trésors",
+    "difficulte": 2,
+    "roles": ["Entrave", "Invocation", "Amélioration"],
+    "roles_url" : ["/assets/roles/entrave.png","/assets/roles/invocation.png", "/assets/roles/amelioration.png"],
+    "logo_url" :"/assets/logo_classes/logo_enutrof.png",
+    "skins" : ["/assets/skins/enutrof.png"],
+    "description" : "Les Enutrofs sont des chasseurs de trésor avides de kamas, qui malgré leur grand âge courent comme des dragodindes à la vue d'un coffre bien rempli. Ils sont experts dans l'art de ralentir leurs ennemis : ils peuvent ainsi les harceler avant de les assommer à grands coups de pelle le moment venu !",
+    "sorts_principaux" : [
+      {
+      "nom" : "Lancer de Pièces",
+      "logo_sort" : "/assets/logo_sort/Enutrof/lancer_de_pieces.png",
+      "cout_pa": 2,
+      "portee" : "0 - 8 (modifiable)",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Eau.",
+        "stats": {
+          "dommages : ": "7 à 9 (Eau)",
+          "dommages_critiques : ": "10 à 12 (Eau)"
+        }
+      },
+      {
+      "nom" : "Force de l'Âge",
+      "logo_sort" : "/assets/logo_sort/Enutrof/force_de_l_age.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Terre et augmente les PM au lanceur.",
+        "stats": {
+          "dommages : ": "17 à 19 (Terre)",
+          "buff : ": "1 PM",
+          "dommages_critiques : ": "20 à 23 (Terre)"
+        }
+      },
+      {
+      "nom" : "Roulage de Pelle",
+      "logo_sort" : "/assets/logo_sort/Enutrof/roulage_de_pelle.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Feu.",
+        "stats": {
+          "dommages : ": "11 à 13 (Feu)",
+          "dommages_critiques : ": "14 à 16 (Feu)"
+        }
+      },
+      {
+      "nom" : "Opportunité",
+      "logo_sort" : "/assets/logo_sort/Enutrof/opportunite.png",
+      "cout_pa": 2,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Air et augmente la Puissance du lanceur.",
+        "stats": {
+          "dommages : ": "8 à 10 (Air)",
+          "buff : ": "30 Puissance (3 tours)",
+          "dommages_critiques : ": "11 à 13 (Air)"
+        }
+      },
+      {
+      "nom" : "Sac Animé",
+      "logo_sort" : "/assets/logo_sort/Enutrof/sac_anime.png",
+      "cout_pa": 2,
+      "portee" : "1 - 3",
+      "effets": "Invoque un Sac Animé maîtrisable qui intercepte les dommages des alliés situés dans sa zone d'invocation. Le Sac Animé est détruit 3 tours après son invocation. Lorsqu'il est attaqué par un allié, ce dernier est soigné.",
+        "stats": {
+          "invocation : ": "Invoque 1 Sac Animé",
+          "particulier 1 : ": "Intercepte les dommages (3 tours)",
+          "particulier 2 : ": "Tue la cible  (dans 3 tours)"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nom": "Sram",
+    "titre": "Assassin",
+    "difficulte": 2,
+    "roles": ["Dégats", "Entrave", "Placement"],
+    "roles_url" : ["/assets/roles/degats.png","/assets/roles/entrave.png", "/assets/roles/placement.png"],
+    "logo_url" :"/assets/logo_classes/logo_sram.png",
+    "skins" : ["/assets/skins/sram.png"],
+    "description" : "Les Srams sont des assassins qui aiment les bourses, rebondies de préférence. Trousser les pans d'une tunique, tâter le fond d'une poche, faire preuve de doigté, palper enfin des bijoux tant convoités avant de poser un piège ou d'asséner un coup mortel, voilà la vie d'un disciple de Sram !",
+    "sorts_principaux" : [
+      {
+      "nom" : "Truanderie",
+      "logo_sort" : "/assets/logo_sort/Sram/truanderie.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "15%",
+      "effets": "Vole de la Puissance et occasionne des dommages Terre.",
+        "stats": {
+          "dommages : ": "15 à 17 (Terre)",
+          "nerf : ": "-20 Puissance (3 tours)",
+          "buff : ": "20 Puissance (3 tours)",
+          "dommages_critiques : ": "19 à 21 (Terre)"
+        }
+      },
+      {
+      "nom" : "Sournoiserie",
+      "logo_sort" : "/assets/logo_sort/Sram/sournoiserie.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6",
+      "critique" : "15%",
+      "effets": "Occasionne des dommages Feu aux ennemis et repousse la cible.",
+        "stats": {
+          "dommages : ": "17 à 19 (Feu)",
+          "repousse : ": "Repousse de 3 cases",
+          "dommages_critiques : ": "20 à 22 (Feu)"
+        }
+      },
+      {
+      "nom" : "Arsenic",
+      "logo_sort" : "/assets/logo_sort/Sram/arsenic.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "15%",
+      "effets": "Retire de la Portée et applique un poison Air de début de tour sur la cible.",
+        "stats": {
+          "dommages : ": "9 à 11 (Air)",
+          "portée : ": "-2 Portée (2 tours)",
+          "dommages_critiques : ": "12 à 14 (Air)"
+        }
+      },
+      {
+      "nom" : "Cruauté",
+      "logo_sort" : "/assets/logo_sort/Sram/cruauté.png",
+      "cout_pa": 3,
+      "portee" : "0 - 6 (modifiable)",
+      "critique" : "15%",
+      "effets": "Occasionne des dommages Eau et augmente les PM du lanceur. Les dommages n'affectent pas le lanceur.",
+        "stats": {
+          "dommages : ": "13 à 15 (Eau)",
+          "buff : ": "1 PM (1 tour)",
+          "dommages_critiques : ": "16 à 18 (Eau)"
+        }
+      },
+      {
+      "nom" : "Invisibilité",
+      "logo_sort" : "/assets/logo_sort/Sram/invisibilité.png",
+      "cout_pa": 2,
+      "portee" : "0 - 4",
+      "effets": "Rend la cible invisible. Augmente également ses PM si c'est un allié. Le temps de relance est réinitialisé lorsque le lanceur achève un combattant.",
+        "stats": {
+          "buff 1 : ": "Rend la cible invisible (1 tour)",
+          "buff 2 : ": "1 PM (2 tour)"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nom": "Forgelance",
+    "titre": "Champion immortel",
+    "difficulte": 3,
+    "roles": ["Dégats", "Placement", "Protéction"],
+    "roles_url" : ["/assets/roles/degats.png","/assets/roles/placement.png", "/assets/roles/protection.png"],
+    "logo_url" :"/assets/logo_classes/logo_forgelance.png",
+    "skins" : ["/assets/skins/forgelance.png"],
+    "description" : "Les Forgelances sont des lanciers qui ne croient qu'en eux-mêmes ! Tirant leurs pouvoirs de la Lance Originelle, ces combattants cherchent à se forger une renommée que la mort elle-même ne saurait effacer. Féru d'arts, de récits légendaires et de joutes épiques, le Forgelance se laissera convaincre de brandir son arme à vos côtés par des promesses de gloire et de postérité. Véritables fers de lance des combats, ils sont les premiers au contact pour percer les défenses adverses.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Trident de la Mer",
+      "logo_sort" : "/assets/logo_sort/Forgelance/trident_de_la_mer.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Eau aux ennemis et attire les cibles en zone.",
+        "stats": {
+          "dommages : ": "13 à 15 (Eau)",
+          "attire : ":"Attire de 2 cases",
+          "dommages_critiques : ": "16 à 18 (Eau)"
+        }
+      },
+      {
+      "nom" : "Effondrement",
+      "logo_sort" : "/assets/logo_sort/Forgelance/effondrement.png",
+      "cout_pa": 3,
+      "portee" : "0 - 3",
+      "critique" : "15%",
+      "effets": "Occasionne des dommages Terre aux ennemis et attire les cibles jusqu'au centre en zone. Les dommages de zone ne sont pas dégressifs. N'affecte pas le lanceur. Le sort ne peut se lancer que sur la Lance si le lanceur est Désarmé.",
+        "stats": {
+          "dommages : ": "13 à 15 (Terre)",
+          "attire : ": "Attire de 3 cases",
+          "dommages_critiques : ": "16 à 18 (Terre)"
+        }
+      },
+      {
+      "nom" : "Estoc Brûlant",
+      "logo_sort" : "/assets/logo_sort/Forgelance/estoc_brulant.png",
+      "cout_pa": 3,
+      "portee" : "1 - 3",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Feu aux ennemis et repousse les cibles depuis le lanceur en zone.",
+        "stats": {
+          "dommages : ": "17 à 19 (Feu)",
+          "repousse : ": "Repousse de 2 cases",
+          "dommages_critiques : ": "20 à 23 (Feu)"
+        }
+      },
+      {
+      "nom" : "Volée d'Airain",
+      "logo_sort" : "/assets/logo_sort/Forgelance/volee_d_airain.png",
+      "cout_pa": 3,
+      "portee" : "1 - 5 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Air aux ennemis et repousse les cibles en zone.",
+        "stats": {
+          "dommages : ": "14 à 16 (Air)",
+          "repousse : ": "Repousse de 2 cases",
+          "dommages_critiques : ": "17 à 19 (Air)"
+        }
+      },
+      {
+      "nom" : "Épilogue",
+      "logo_sort" : "/assets/logo_sort/Forgelance/epilogue.png",
+      "cout_pa": 1,
+      "portee" : "1 - 6",
+      "effets": "Invoque ou rappelle la Lance. La ligne de vue du sort est désactivée si le lanceur est Désarmé.",
+        "stats": {
+          "invocation : ": "Invoque 1 Lance Immortelle"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nom": "Zobal",
+    "titre": "Guerrier lunatique",
+    "difficulte": 3,
+    "roles": ["Tank", "Protéction", "Dégats"],
+    "roles_url" : ["/assets/roles/tank.png","/assets/roles/protection.png", "/assets/roles/degats.png"],
+    "logo_url" :"/assets/logo_classes/logo_zobal.png",
+    "skins" : ["/assets/skins/zobal.png"],
+    "description" : "Les Zobals portent des masques magiques qui leur permettent de changer de tête comme de chemise. Tour à tour collants comme de la glu, enragés comme des psychopathes ou partisans de la retraite stratégique, ils s'adaptent à la situation, mais gare aux troubles de la personnalité ! La légende dit que ces êtres imprévisibles seraient bénis par Sadida lui-même.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Brincadeira",
+      "logo_sort" : "/assets/logo_sort/Zobal/brincadeira.png",
+      "cout_pa": 2,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Feu et retire de la Portée.",
+        "stats": {
+          "dommages : ": "7 à 9 (Feu)",
+          "portée : ":"-2 Portée (1 tour)",
+          "dommages_critiques : ": "10 à 12 (Feu)"
+        }
+      },
+      {
+      "nom" : "Catalepsie",
+      "logo_sort" : "/assets/logo_sort/Zobal/catalepsie.png",
+      "cout_pa": 3,
+      "portee" : "0",
+      "critique" : "15%",
+      "effets": "Vole de la vie dans l'élément Terre et retire de la Fuite en zone.",
+        "stats": {
+          "dommages : ": "13 à 15 (Terre)",
+          "nerf : ": "-10 Fuite (1 tour)",
+          "dommages_critiques : ": "16 à 18 (Terre)"
+        }
+      },
+      {
+      "nom" : "Parafuso",
+      "logo_sort" : "/assets/logo_sort/Zobal/parafuso.png",
+      "cout_pa": 3,
+      "portee" : "0 - 5",
+      "critique" : "15%",
+      "effets": "Vole de la vie dans l'élément Eau aux ennemis et attire les cibles vers le centre en zone.",
+        "stats": {
+          "dommages : ": "13 à 15 (Eau)",
+          "attire : ": "Attire de 1 case",
+          "dommages_critiques : ": "16 à 18 (Eau)"
+        }
+      },
+      {
+      "nom" : "Cavalcade",
+      "logo_sort" : "/assets/logo_sort/Zobal/cavalcade.png",
+      "cout_pa": 4,
+      "portee" : "1 - 5",
+      "critique" : "25%",
+      "effets": "Rapproche le lanceur vers la cible et occasionne des dommages Air aux ennemis.",
+        "stats": {
+          "dommages : ": "23 à 25 (Air)",
+          "avance : ": "Avance de 4 cases",
+          "dommages_critiques : ": "27 à 30 (Air)"
+        }
+      },
+      {
+      "nom" : "Masque de l'Intrépide",
+      "logo_sort" : "/assets/logo_sort/Zobal/masque_de_l_intrepide.png",
+      "cout_pa": 1,
+      "portee" : "0",
+      "effets": "Applique le Masque de l'Intrépide sur le lanceur : Applique l'état Intrépide sur le lanceur, Augmente les PA du lanceur et de ses alliés (hors Zobals) dans une croix d'une case, Attire les entités vers le centre en zone.",
+        "stats": {
+          "état : ": "État Intrépide  (infini)",
+          "buff 1 : ": "1 PA  (infini)",
+          "buff 2 : ": "1 PA (1 tour)",
+          "attire : ":"Attire de 1 case"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nom": "Pandawa",
+    "titre": "Bagarreur assoiffé",
+    "difficulte": 3,
+    "roles": ["Placement", "Dégats", "Tank"],
+    "roles_url" : ["/assets/roles/placement.png","/assets/roles/degats.png", "/assets/roles/tank.png"],
+    "logo_url" :"/assets/logo_classes/logo_pandawa.png",
+    "skins" : ["/assets/skins/pandawa.png"],
+    "description" : "Les Pandawas sont des guerriers adeptes des arts martiaux qui savent faire des folies de leurs corps ! Ils peuvent même en faire avec le corps des autres... Le Pandawa sait comment soulever les foules, il porte ses alliés sur ses épaules pour mieux les protéger. Quant à ses ennemis, il les enverra valser dans le décor, avant de fêter sa victoire avec une bonne rasade de lait de bambou !",
+    "sorts_principaux" : [
+      {
+      "nom" : "Gueule de Bois",
+      "logo_sort" : "/assets/logo_sort/Pandawa/gueule_de_bois.png",
+      "cout_pa": 3,
+      "portee" : "1 - 3",
+      "critique" : "10%",
+      "effets": "Rend le lanceur Sobre et occasionne des dommages Terre. Les dommages sont plus importants si le lanceur est sorti de l'état Saoul pendant le tour en cours.",
+        "stats": {
+          "état : ": "État Sobre (infini)",
+          "dommages_saoul": "14 à 16 (Terre)",
+          "dommages":"18 à 20 (Terre)",
+          "dommages_critiques_saoul : ": "17 à 19 (Terre)",
+          "dommages_critiques : ": "21 à 23 (Terre)"
+        }
+      },
+      {
+      "nom" : "Paume Explosive",
+      "logo_sort" : "/assets/logo_sort/Pandawa/paume_explosive.png",
+      "cout_pa": 2,
+      "portee" : "0 - 5",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Feu. N'affecte pas le lanceur. Modifie le sort selon l'état du lanceur après un lancer : Le coût en PA du sort est augmenté après le premier lancer, sobre : les dommages s'appliquent en zone, saoul : les dommages du sort sont augmentés. Chaque effet est cumulable une fois.",
+        "stats": {
+          "dommages : ": "12 à 14 (Feu)",
+          "cout_pa_supérieur :" : "+1 PA (1 tour)",
+          "état_sobre : ": "Cercle de taille 2 (1 tour)",
+          "état_saoul : ": "+6 dégâts de base (1 tour)",
+          "dommages_critiques : ": "15 à 17 (Feu)"
+        }
+      },
+      {
+      "nom" : "Schnaps",
+      "logo_sort" : "/assets/logo_sort/Pandawa/schnaps.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Air et applique des effets sur les cibles selon l'état du lanceur en zone : Sobre : retire du Retrait PA et PM, saoul : réduit les Résistances Poussée. N'affecte pas le lanceur.",
+        "stats": {
+          "dommages : ": "12 à 14 (Air)",
+          "état_sobre : ": "-10 Retrait PM et -10 Retrait PA (2 tours)",
+          "état_saoul : ": "-20 Résistances Poussée (2 tours)",
+          "dommages_critiques : ": "15 à 17 (Air)"
+        }
+      },
+      {
+      "nom" : "Ethylo",
+      "logo_sort" : "/assets/logo_sort/Pandawa/ethylo.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Eau et applique des effets selon l'état du lanceur : Sobre : augmente la Portée du lanceur, saoul : retire de la Portée à la cible.",
+        "stats": {
+          "dommages : ": "15 à 17 (Eau)",
+          "état_sobre : ": "+2 Portée (1 tour)",
+          "état_saoul : ": "-2 Portée (1 tour)",
+          "dommages_critiques : ": "18 à 20 (Eau)"
+        }
+      },
+      {
+      "nom" : "Bombance",
+      "logo_sort" : "/assets/logo_sort/Pandawa/bombance.png",
+      "cout_pa": 1,
+      "portee" : "0",
+      "effets": "Rend le lanceur Saoul ou Sobre. Rend 1 PA s'il devient Sobre.",
+        "stats": {
+          "état 1 : ": "État Saoul (2 tours)",
+          "état 2 :": "État Sobre (infini)",
+          "bonus : ": "Rembourse 1 PA"
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "nom": "Sadida",
+    "titre": "Sorcier sylvestre",
+    "difficulte": 3,
+    "roles": ["Invocation", "Entrave", "Soins"],
+    "roles_url" : ["/assets/roles/invocation.png","/assets/roles/entrave.png", "/assets/roles/soins.png"],
+    "logo_url" :"/assets/logo_classes/logo_sadida.png",
+    "skins" : ["/assets/skins/sadida.png"],
+    "description" : "Les Sadidas sont des invocateurs qui empoisonnent la vie de leurs ennemis ! Apprivoiser les Ronces pour en faire des armes terrifiantes, confectionner des poupées de guerre et de soins, voilà qui satisfait tout disciple Sadida digne de ce nom.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Ronce",
+      "logo_sort" : "/assets/logo_sort/Sadida/ronce.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "15%",
+      "effets": "Infecte la cible et occasionne des dommages Terre. Sur un Arbre Feuillu : applique les effets sur les ennemis dans un cercle de taille 2. Sur un ennemi : applique également les effets sur tous les ennemis Infectés.",
+        "stats": {
+          "état : ": "État Infecté (1 tour)",
+          "dommages : ":"14 à 16 (Terre)",
+          "dommages_critiques : ": "17 à 19 (Terre)"
+        }
+      },
+      {
+      "nom" : "Larme de Sadida",
+      "logo_sort" : "/assets/logo_sort/Sadida/larme_de_sadida.png",
+      "cout_pa": 3,
+      "portee" : "0 - 6 (modifiable)",
+      "critique" : "15%",
+      "effets": "Soigne les alliés ou occasionne des dommages Eau aux ennemis. Sur un Arbre : applique les effets dans un cercle de taille 2 et transforme l'Arbre en Arbre Feuillu. Sur un ennemi Infecté : applique les effets sur tous les ennemis Infectés.",
+        "stats": {
+          "soins : " : "15 à 17 (soins Eau)",
+          "dommages : ": "15 à 17 (Eau)",
+          "état : ": "Feuillu (infini)",
+          "soins_critique : ": "18 à 20 (soins Eau)",
+          "dommages_critiques : ": "18 à 20 (Eau)"
+        }
+      },
+      {
+      "nom" : "Buisson Ardent",
+      "logo_sort" : "/assets/logo_sort/Sadida/buisson_ardent.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "15%",
+      "effets": "Occasionne des dommages Feu et retire des PM. Sur un Arbre Feuillu : applique les effets sur les ennemis dans un cercle de taille 2. Sur un ennemi Infecté : applique les effets sur tous les ennemis Infectés.",
+        "stats": {
+          "dommages : ": "15 à 17 (Feu)",
+          "nerf : ": "-2 PM (1 tour)",
+          "dommages_critiques : ": "18 à 20 (Feu)"
+        }
+      },
+      {
+      "nom" : "Cigüe",
+      "logo_sort" : "/assets/logo_sort/Sadida/cigue.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "15%",
+      "effets": "Occasionne des dommages Air. Sur un Arbre Feuillu : applique les effets et maintient l'Infection sur les ennemis dans un cercle de taille 2. Sur un ennemi Infecté : applique les effets sur tous les ennemis Infectés et maintient l'Infection sur la cible.",
+        "stats": {
+          "dommages : ": "15 à 17 (Air)",
+          "état : ": "État Infecté (3 tours)",
+          "dommages_critiques : ": "19 à 21 (Air)"
+        }
+      },
+      {
+      "nom" : "Arbre",
+      "logo_sort" : "/assets/logo_sort/Sadida/arbre.png",
+      "cout_pa": 2,
+      "portee" : "1 - 6",
+      "effets": "Plante un Arbre. Un Arbre devient Feuillu après 1 tour. Il ne peut y avoir que 6 Arbres par équipe. Le septième Arbre planté entraîne la mort du premier.",
+        "stats": {
+          "invocation : ": "Invoque 1 Arbre",
+          "état : ": "État Feuillu (invoc.)-infini (dans 1 tour)"
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "nom": "Osamodas",
+    "titre": "Invocateur de créatures",
+    "difficulte": 4,
+    "roles": ["Invocation", "Soins", "Amélioration"],
+    "roles_url" : ["/assets/roles/invocation.png","/assets/roles/soins.png", "/assets/roles/amelioration.png"],
+    "logo_url" :"/assets/logo_classes/logo_osamodas.png",
+    "skins" : ["/assets/skins/osamodas.png"],
+    "description" : "Les Osamodas sont des dompteurs nés ! Ils ont le pouvoir d'invoquer des créatures et sont de remarquables dresseurs. Une rumeur prétend qu'ils taillent leurs vêtements dans la peau de leurs ennemis, mais allez donc leur demander ce qu'il en est... Si vous êtes de son côté, un Osamodas sera aux petits soins pour vous. Dans le cas contraire, peut-être terminerez-vous votre vie sous la forme d'une botte ou d'un bonnet fourré.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Cri de l'Ours",
+      "logo_sort" : "/assets/logo_sort/Osamodas/cri_de_l_ours.png",
+      "cout_pa": 3,
+      "portee" : "0 - 1",
+      "critique" : "10%",
+      "effets": "Soigne les alliés et vole de la vie dans l'élément Terre aux ennemis en zone. Augmente également la Puissance du lanceur et des alliés ciblés. Les soins n'affectent pas le lanceur.",
+        "stats": {
+          "soins : ": "14 à 16 (soins Terre)",
+          "dommages : ":"14 à 16 (vol Terre)",
+          "buff : ": "30 Puissance (2 tours)",
+          "soins_critique : ":"17 à 19 (soins Terre)",
+          "dommages_critiques : ": "17 à 19 (vol Terre)"
+        }
+      },
+      {
+      "nom" : "Cri du Corbac",
+      "logo_sort" : "/assets/logo_sort/Osamodas/cri_du_corbac.png",
+      "cout_pa": 2,
+      "portee" : "0 - 5 (modifiable)",
+      "critique" : "5%",
+      "effets": "Vole de la vie aux ennemis ou soigne les alliés dans l'élément Air. Augmente également les PM du lanceur et de l'allié ciblé. Les soins n'affectent pas le lanceur.",
+        "stats": {
+          "soins : ": "8 à 10 (soins Air)",
+          "dommages : ":"8 à 10 (vol Air)",
+          "buff : ": "1 PM (2 tours)",
+          "soins_critique : " : "11 à 13 (soins Air)",
+          "dommages_critiques : ": "11 à 13 (vol Air)"
+        }
+      },
+      {
+      "nom" : "Dents du Piranya",
+      "logo_sort" : "/assets/logo_sort/Osamodas/dents_du_piranya.png",
+      "cout_pa": 3,
+      "portee" : "0 - 3 (modifiable)",
+      "critique" : "10%",
+      "effets": "Soigne les alliés et vole de la vie dans l'élément Eau aux ennemis en zone. Augmente également les Dommages du lanceur et des alliés ciblés. Les soins n'affectent pas le lanceur.",
+        "stats": {
+          "soins : ": "11 à 13 (soins Eau)",
+          "dommages : ":"11 à 13 (vol Eau)",
+          "buff : ": "10 dommages (2 tours)",
+          "soins_critique : ":"11 à 13 (soins Eau)",
+          "dommages_critiques : ": "11 à 13 (vol Eau)"
+        }
+      },
+      {
+      "nom" : "Pics du Prespic",
+      "logo_sort" : "/assets/logo_sort/Osamodas/pics_du_prespic.png",
+      "cout_pa": 2,
+      "portee" : "0 - 3 (modifiable)",
+      "critique" : "5%",
+      "effets": "Vole de la vie aux ennemis ou soigne les alliés dans l'élément Feu. Augmente également les chances de Critique du lanceur et de l'allié ciblé. Les soins n'affectent pas le lanceur.",
+        "stats": {
+          "soins : ": "8 à 10 (soins Feu)",
+          "dommages : ":"8 à 10 (vol Feu)",
+          "buff : ": "5% Critique (2 tours)",
+          "soins_critique : ":"11 à 13 (soins Feu)",
+          "dommages_critiques : ": "11 à 13 (vol Feu)"
+        }
+      },
+      {
+      "nom" : "Fouet",
+      "logo_sort" : "/assets/logo_sort/Osamodas/fouet.png",
+      "cout_pa": 2,
+      "portee" : "1 - 3",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages dans le meilleur élément du lanceur aux ennemis et repousse la cible. Augmente également les PM de la cible si c'est une invocation alliée.",
+        "stats": {
+          "dommages : ": "8 à 10 (Meilleur élément)",
+          "repousse : ": "Repousse de 2 cases", 
+          "buff : ": "+ 1 PM (1 tour)",
+          "dommages_critiques : ":"11 à 13 (Meilleur élément)"
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "nom": "Steamer",
+    "titre": "Technomage",
+    "difficulte": 4,
+    "roles": ["Soins", "Placement", "Dégats"],
+    "roles_url" : ["/assets/roles/soins.png","/assets/roles/placement.png", "/assets/roles/degats.png"],
+    "logo_url" :"/assets/logo_classes/logo_steameur.png",
+      "skins" : ["/assets/skins/steamer.png"],
+    "description" : "Les Steamers ont plus d'une tourelle dans leur boîte à outils. En fins tacticiens, ils utilisent la technomagie pour prendre l'avantage sur le terrain. Ces marinventeurs aux scaphandres rutilants vouent un culte au Grand Oktapodas, le protecteur des océans.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Longue-vue",
+      "logo_sort" : "/assets/logo_sort/Steameur/longue_vue.png",
+      "cout_pa": 3,
+      "portee" : "0 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Eau aux ennemis et applique des effets selon la Marée : Marée Basse : augmente la Portée du lanceur et de l'allié ciblé, Marée Haute : retire des PM aux ennemis.",
+        "stats": {
+          "dommages : ":"15 à 17 (Eau)",
+          "maree_basse : ": "3 Portée (2 tours)",
+          "maree_haute : ":"-2 PM (1 tour)",
+          "dommages_critiques : ": "18 à 21 (Eau)"
+        }
+      },
+      {
+      "nom" : "Amarrage",
+      "logo_sort" : "/assets/logo_sort/Steameur/amarrage.png",
+      "cout_pa": 2,
+      "portee" : "1 - 5",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Terre aux ennemis et attire la cible. Rend 1 PA au lanceur si le sort est lancé sur une Tourelle.",
+        "stats": {
+          "dommages : ":"11 à 13 (Terre)",
+          "buff : ": "Rembourse 1 PA",
+          "attire : ":"Attire de 2 cases",
+          "dommages_critiques : ": "14 à 16 (Terre)"
+        }
+      },
+      {
+      "nom" : "Torpille",
+      "logo_sort" : "/assets/logo_sort/Steameur/torpille.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Air aux ennemis et repousse la cible.",
+        "stats": {
+          "dommages : ":"15 à 17 (Air)",
+          "repousse : ": "Repousse de 2 cases",
+          "dommages_critiques : ": "18 à 21 (Air)"
+        }
+      },
+      {
+      "nom" : "Sabotage",
+      "logo_sort" : "/assets/logo_sort/Steameur/sabotage.png",
+      "cout_pa": 3,
+      "portee" : "0 - 4 ",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Feu et retire des Dommages aux ennemis en zone. Les dommages du sort sont augmentés pour chaque Tourelle évoluée dans la zone avant d'appliquer les effets. Rétrograde les Tourelles touchées pour réduire leur temps de relance.",
+        "stats": {
+          "dommages : ": "13 à 15 (Feu)",
+          "nerf : ": "-10 Dommages (1 tour)",
+          "dégats_bonus : ": "+3 dégâts de base par Tourelle",
+          "particulier : ": "-1 Évolution aux Tourelles",
+          "dommages_critiques : ": "16 à 18 (Feu)"
+        }
+      },
+      {
+      "nom" : "Harponneuse",
+      "logo_sort" : "/assets/logo_sort/Steameur/harponneuse.png",
+      "cout_pa": 2,
+      "portee" : "1 - 7",
+      "effets": "Pose une Tourelle offensive qui vole de la vie dans le meilleur élément du lanceur.",
+        "stats": {
+          "invocation : ": "Invoque 1 Harponneuse"
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "nom": "Huppermage",
+    "titre": "Mage élémentaliste",
+    "difficulte": 4,
+    "roles": ["Dégats", "Placement", "Amélioration"],
+    "roles_url" : ["/assets/roles/degats.png","/assets/roles/placement.png", "/assets/roles/amelioration.png"],
+    "logo_url" :"/assets/logo_classes/logo_huppermage.png",
+    "skins" : ["/assets/skins/huppermage.png"],
+    "description" : "Les Huppermages sont capables de combiner le Feu, l'Air, l'Eau et la Terre pour lancer des sortilèges aux multiples effets. Maîtres des runes élémentaires, ils vénèrent la Balance Krosmique, une force mystérieuse qui tend à maintenir l'équilibre dans l'univers.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Éther",
+      "logo_sort" : "/assets/logo_sort/Huppermage/ether.png",
+      "cout_pa": 3,
+      "portee" : "1 - 5 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Air et augmente l'Agilité du lanceur. Peut générer des combinaisons élémentaires.",
+        "stats": {
+          "pose_rune : ": "Pose une rune Air (2 tours)",
+          "dommages : ": "15 à 17 (Air)",
+          "boost : ": "+10 Agilité (3 tours)",
+          "état : ": "État Air (infini)",
+          "dommages_critiques : ": "18 à 20 (Air)",
+          "boost_critiques : ": "+10 Agilité (3 tours)"
+        }
+      },
+      {
+      "nom" : "Onde Tellurique",
+      "logo_sort" : "/assets/logo_sort/Huppermage/onde_tellurique.png",
+      "cout_pa": 3,
+      "portee" : "1 - 6 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Terre et augmente la Force du lanceur. Peut générer des combinaisons élémentaires.",
+        "stats": {
+          "pose_rune : ": "Pose une rune Terre (2 tours)",
+          "dommages : ": "14 à 16 (Terre)",
+          "boost : ": "+10 Force (3 tours)",
+          "état : ": "État Terre (infini)",
+          "dommages_critiques : ": "17 à 19 (Terre)",
+          "boost_critiques : ": "+10 Force (3 tours)"
+        }
+      },
+      {
+      "nom" : "Lance-flamme",
+      "logo_sort" : "/assets/logo_sort/Huppermage/lance_flamme.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Feu et augmente l'Intelligence du lanceur. Peut générer des combinaisons élémentaires.",
+        "stats": {
+          "pose_rune : ": "Pose une rune Feu (2 tours)",
+          "dommages : ": "16 à 18 (Feu)",
+          "boost : ": "+10 Intelligence (3 tours)",
+          "état : ": "État Feu (infini)",
+          "dommages_critiques : ": "19 à 21 (Feu)",
+          "boost_critiques : ": "+10 Intelligence (3 tours)"
+        }
+      },
+      {
+      "nom" : "Stalagmite",
+      "logo_sort" : "/assets/logo_sort/Huppermage/stalagmite.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4 ",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Eau et augmente la Chance du lanceur. Peut générer des combinaisons élémentaires.",
+        "stats": {
+          "pose_rune : ": "Pose une rune Eau (2 tours)",
+          "dommages : ": "17 à 19 (Eau)",
+          "boost : ": "+10 Chance (3 tours)",
+          "état : ": "État Eau (infini)",
+          "dommages_critiques : ": "21 à 23 (Eau)",
+          "boost_critiques : ": "+10 Chance (3 tours)"
+        }
+      },
+      {
+      "nom" : "Runification",
+      "logo_sort" : "/assets/logo_sort/Huppermage/runification.png",
+      "cout_pa": 3,
+      "portee" : "0",
+      "effets": "Déclenche toutes les runes du lanceur occupées par un ennemi. Peut générer des combinaisons élémentaires.",
+        "stats": {
+          "effet : ": "Déclenche les runes"
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "nom": "Ecaflip",
+    "titre": "Combattant imprévisible",
+    "difficulte": 4,
+    "roles": ["Dégats", "Amélioration", "Soins"],
+    "roles_url" : ["/assets/roles/degats.png","/assets/roles/amelioration.png", "/assets/roles/soins.png"],
+    "logo_url" :"/assets/logo_classes/logo_ecaflip.png",
+    "skins" : ["/assets/skins/ecaflip.png"],
+    "description" : "Les Ecaflips sont des guerriers joueurs qui se fourrent dans les endroits où l'on peut gagner gros, et perdre beaucoup... Un Ecaflip bien dans sa peau parie sans arrêt, pour tout et pour rien. Mais attention, il prend le jeu très au sérieux et ira même jusqu'à risquer sa vie sur un jet de dés pour tenter de remporter la mise...",
+    "sorts_principaux" : [
+      {
+      "nom" : "Réflexes",
+      "logo_sort" : "/assets/logo_sort/Ecaflip/reflexes.png",
+      "cout_pa": 2,
+      "portee" : "0 - 4 (modifiable)",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Air et augmente les PM du lanceur. Les dommages n'affectent pas le lanceur. Pioche un Valet de Pique.",
+        "stats": {
+          "dommages : ": "8 à 10 (Air)",
+          "boost : ": "+1 PM (1 tour)",
+          "état : ": "État Valet de Pique (infini)",
+          "dommages_critiques : ": "12 (Air)"
+        }
+      },
+      {
+      "nom" : "Yams",
+      "logo_sort" : "/assets/logo_sort/Ecaflip/yams.png",
+      "cout_pa": 2,
+      "portee" : "0 - 4 (modifiable)",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Eau et augmente les chances de Critique du lanceur. Les dommages n'affectent pas le lanceur. Pioche un Valet de Trèfle.",
+        "stats": {
+          "dommages : ": "1 à 6 (Eau)",
+          "boost : ": "3 à 18% Critique (2 tours)",
+          "état : ": "État Valet de Trèfle (infini)",
+          "dommages_critiques : ": "9 (Eau)",
+          "boost_critiques : ": "21% Critique (2 tours)"
+        }
+      },
+      {
+      "nom" : "Topkaj",
+      "logo_sort" : "/assets/logo_sort/Ecaflip/topkaj.png",
+      "cout_pa": 2,
+      "portee" : "0 - 4 (modifiable)",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Feu aux ennemis ou soigne les alliés. Pioche un Valet de Cœur.",
+        "stats": {
+          "dommages 1 :": "7 (Feu), dans 16,7% des cas",
+          "soins 1 :": "7 (soins Feu), dans 16,7% des cas",
+          "dommage 2 : ": "10 (Feu), dans 16,7% des cas",
+          "soins 2 : ": "10 (soins Feu), dans 16,7% des cas",
+          "dommages 3 : ": "13 (Feu), dans 16,7% des cas",
+          "soins 3 : ": "10 (soins Feu), dans 16,7% des cas",
+          "état : ": "État Valet de Cœur  (infini)",
+          "dommages_critiques 1 : ": "10 (Feu), dans 16,7% des cas",
+          "soins_critiques 1 : ": "10 (soins Feu), dans 16,7% des cas",
+          "dommages_critiques 2 : ": "13 (Feu), dans 16,7% des cas",
+          "soins_critiques 2 : ": "13 (soins Feu), dans 16,7% des cas",
+          "dommages_critiques 3 : ": "16 (Feu), dans 16,7% des cas",
+          "soins_critique 3 : ": "16 (soins Feu), dans 16,7% des cas"
+        }
+      },
+      {
+      "nom" : "Pile ou Face",
+      "logo_sort" : "/assets/logo_sort/Ecaflip/pile_ou _face.png",
+      "cout_pa": 2,
+      "portee" : "0 - 4 (modifiable)",
+      "critique" : "5%",
+      "effets": "Occasionne des dommages Terre. Sur le lanceur : applique aléatoirement l'état Pile ou l'état Face et lui rend 1 PA, pile : donne 1 PA, Face : donne 1 PM, relancer le sort dans un état permet de s'appliquer l'autre. Pioche un Valet de Carreau.",
+        "stats": {
+          "dommages : ": "10 (Terre)",
+          "boost 1 : ": "2% Critique (infini)",
+          "état 1 : ": "État Pile (2 tours), dans 50.0% des cas",
+          "boost_état 1 : ": "1 PA (1 tour)",
+          "état 2 : ": "État Face (2 tours), dans 50.0% des cas",
+          "boost_état 2 : ": "1 PM (1 tour)",
+          "boost 2 : ": "Rembourse 1 PA",
+          "état 3 : ": "État Valet de Carreau (infini)",
+          "dommages_critiques : ": "14 (Terre)"
+        }
+      },
+      {
+      "nom" : "Bonne Pioche",
+      "logo_sort" : "/assets/logo_sort/Ecaflip/bonne_pioche.png",
+      "cout_pa": 1,
+      "portee" : "0",
+      "critique": "1%",
+      "effets": "Pioche une Carte aléatoire du Poker d'Ecaflip. Joue la Main avant de Piocher si elle est pleine. Le coût en PA du sort est remboursé.",
+        "stats": {
+          "bonus 1 : ": "Joue la main",
+          "bonus 2 : ": "Pioche une Carte",
+          "rembourse : ": "Rembourse 1 PA"
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "nom": "Roublard",
+    "titre": "Expert en explosifs",
+    "difficulte": 5,
+    "roles": ["Dégats", "Entrave", "Placement"],
+    "roles_url" : ["/assets/roles/degats.png","/assets/roles/entrave.png", "/assets/roles/placement.png"],
+    "logo_url" :"/assets/logo_classes/logo_roublard.png",
+    "skins" : ["/assets/skins/roublard.png"],
+    "description" : "Membres d'un clan créé à l'origine par Raval et la famille Smisse, les Roublards ont finalement prêté allégeance au dieu Dralbour, qui n'est autre que Sram. Maîtres de l'entourloupe, du coup fourré, des bombes à retardement et des pistolets... les Roublards ne sont à l'aise qu'en terrain miné.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Explobombe",
+      "logo_sort" : "/assets/logo_sort/Roublard/explobombe.png",
+      "cout_pa": 2,
+      "portee" : "1 - 6",
+      "effets": "Pose une Bombe qui peut occasionner des dommages Feu en zone à son explosion. Sur une cible : applique les effets de la Bombe en zone. N'affecte pas le lanceur. Ajoute également 1 Combo et déclenche l'explosion d'une Bombe si la cible est une de ses Bombes. Le coût en PA du sort augmente de 1 pour chaque Explobombe du lanceur présente sur le terrain.",
+        "stats": {
+          "invocation : ": "Invoque : Explobombe",
+          "dommages : ": "9 à 10 (Feu)",
+          "bonus : ": "+1 Combo",
+          "effet : ": "Déclenche une bombe"
+        }
+      },
+      {
+      "nom" : "Tornabombe",
+      "logo_sort" : "/assets/logo_sort/Roublard/tornabombe.png",
+      "cout_pa": 2,
+      "portee" : "1 - 6",
+      "effets": "Pose une Bombe qui peut occasionner des dommages Air et retirer des PM selon son Combo en zone à son explosion, Combo I à IV : -1 PM, Combo V à IX : -2 PM, Combo X à XV : -3 PM, Mur d'Air : -2 PM. Sur une cible : applique les effets de la Bombe en zone. N'affecte pas le lanceur. Ajoute également 1 Combo et déclenche l'explosion d'une Bombe si la cible est une de ses Bombes. Le coût en PA du sort augmente de 1 pour chaque Tornabombe du lanceur présente sur le terrain.",
+        "stats": {
+          "invocation : ": "Invoque : Tornabombe",
+          "dommages : ": "9 à 10 (Air)",
+          "nerf : ":"- 2 PM (1 tour)",
+          "bonus : ": "+1 Combo",
+          "effet : ": "Déclenche une bombe"
+        }
+      },
+      {
+      "nom" : "Bombe à Eau",
+      "logo_sort" : "/assets/logo_sort/Roublard/bombe_a_eau.png",
+      "cout_pa": 2,
+      "portee" : "1 - 6",
+      "effets": "Pose une Bombe qui peut occasionner des dommages Eau et retirer des PA selon son Combo en zone à son explosion. Combo I à IV : -0 PA. Combo V à IX : -1 PA. Combo X à XV : -2 PA. Sur une cible : applique les effets de la Bombe en zone. N'affecte pas le lanceur. Ajoute également 1 Combo et déclenche l'explosion d'une Bombe si la cible est une de ses Bombes. Le mur de Bombes à Eau retire des PA uniquement aux entités qui commencent leur tour à l'intérieur. Mur d'Eau : -2 PA Le coût en PA du sort augmente de 1 pour chaque Bombe à Eau du lanceur présente sur le terrain.",
+        "stats": {
+          "invocation : ": "Invoque : Bombe à Eau",
+          "dommages : ": "9 à 10 (Eau)",
+          "nerf : ":"- 2 PA (1 tour)",
+          "bonus : ": "+1 Combo",
+          "effet : ": "Déclenche une bombe"
+        }
+      },
+      {
+      "nom" : "Sismobombe",
+      "logo_sort" : "/assets/logo_sort/Roublard/sismobombe.png",
+      "cout_pa": 2,
+      "portee" : "1 - 6",
+      "effets": "Pose une Bombe qui peut occasionner des dommages Terre en zone à son explosion. Sur une cible : applique les effets de la Bombe en zone. N'affecte pas le lanceur. Ajoute également 1 Combo et déclenche l'explosion d'une Bombe si la cible est une de ses Bombes. Le coût en PA du sort augmente de 1 pour chaque Sismobombe du lanceur présente sur le terrain.",
+        "stats": {
+          "invocation : ": "Invoque : Sismobombe",
+          "dommages : ": "12 à 13 (Terre)",
+          "bonus : ": "+1 Combo",
+          "effet : ": "Déclenche une bombe"
+        }
+      },
+      {
+      "nom" : "Détonateur",
+      "logo_sort" : "/assets/logo_sort/Roublard/détonateur.png",
+      "cout_pa": 1,
+      "portee" : "1 - 6 (modifiable)",
+      "effets": "Ajoute 1 Combo à une Bombe du lanceur et déclenche son explosion. Rend 1 PA au lanceur avant l'explosion.",
+        "stats": {
+          "bonus : ": "+1 Combo",
+          "rembourse : ": "Rembourse 1 PA",
+          "effet : ": "Déclenche une bombe"
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "nom": "Eliotrope",
+    "titre": "Créateur de portails",
+    "difficulte": 5,
+    "roles": ["Placement", "Dégats", "Soins"],
+    "roles_url" : ["/assets/roles/placement.png","/assets/roles/degats.png", "/assets/roles/soins.png"],
+    "logo_url" :"/assets/logo_classes/logo_eliotrope.png",
+    "skins" : ["/assets/skins/eliotrope.png"],
+    "description" : "Apparus par accident, les Eliotropes sont des reflets de leur créateur, le Roi-Dieu. Ils se déplacent à la vitesse de l'éclair, disparaissant en un clin d'œil pour réapparaître plus loin. Tout comme les Eliatropes, ils connaissent les secrets du Wakfu.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Affront",
+      "logo_sort" : "/assets/logo_sort/Eliotrope/affront.png",
+      "cout_pa": 3,
+      "portee" : "1 - 5 (modifiable)",
+      "critique" : "10%",
+      "effets": "Occasionne des dommages Air aux ennemis et repousse les cibles en zone. La poussée n'est pas appliquée si le sort est projeté dans un portail.",
+        "stats": {
+          "dommages": "15 à 17 (Air)",
+          "repousse": "Repousse de 2 cases",
+          "critique_dommages": "18 à 20 (Air)"
+        }
+      },
+      {
+      "nom" : "Audace",
+      "logo_sort" : "/assets/logo_sort/Eliotrope/audace.png",
+      "cout_pa": 3,
+      "portee" : "1 - 5",
+      "critique": "10%",
+      "effets": "Rapproche le lanceur de la cible et occasionne des dommages Eau aux ennemis. Le rapprochement n'est pas appliqué si le sort est projeté dans un portail.",
+        "stats": {
+          "avance : ": "Avance de 2 cases",
+          "dommages : ": "15 à 17 (Eau)",
+          "dommages_critiques : ": "19 à 21 (Eau)"
+        }
+      },
+      {
+      "nom" : "Commotion",
+      "logo_sort" : "/assets/logo_sort/Eliotrope/commotion.png",
+      "cout_pa": 3,
+      "portee" : "0 - 6",
+      "critique":"10%",
+      "effets": "Occasionne des dommages Terre aux ennemis et attire les cibles vers le centre en zone. L'attirance affecte le lanceur uniquement si le sort est projeté dans un portail.",
+        "stats": {
+          "dommages : ":"14 à 16 (Terre)",
+          "attire : " :"Attire de 1 case",
+          "dommages_critiques : ": "17 à 19 (Terre)"
+        }
+      },
+      {
+      "nom" : "Rayon de Wakfu",
+      "logo_sort" : "/assets/logo_sort/Eliotrope/rayon_de_wakfu.png",
+      "cout_pa": 3,
+      "portee" : "1 - 5",
+      "effets": "Soigne les alliés et occasionne des dommages Feu aux ennemis en zone.",
+        "stats": {
+          "soins : ": "15 à 17 (soins Feu)",
+          "dommages : ": "15 à 17 (Feu)",
+          "soins_critique : ":"18 à 20 (soins Feu)",
+          "dommages_critiques : ":"18 à 20 (Feu)"
+        }
+      },
+      {
+      "nom" : "Portail",
+      "logo_sort" : "/assets/logo_sort/Eliotrope/portail.png",
+      "cout_pa": 1,
+      "portee" : "1 - 4",
+      "effets": "Pose un portail. Lorsque plusieurs portails sont actifs, ils permettent de se téléporter ou de projeter des sorts. Les dommages et soins des sorts projetés sont augmentés par les portails. Les dommages et soins finaux du lanceur sont augmentés lorsqu'il projette un sort dans un portail (cumulable 10 fois). Les combattants ennemis ne peuvent pas emprunter un portail au premier tour de jeu.",
+        "stats": {
+          "portail : ": "Pose un portail (+% dommages, +2% dommages par case d'éloignement entre 2 portails) (infini)",
+          "dommages : ": "2% Dommages finaux (3 tours)",
+          "soins : ": "2% Soins finaux (3 tours)"
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "nom": "Xélor",
+    "titre": "Maître du temps",
+    "difficulte": 5,
+    "roles": ["Placement", "Entrave", "Dégats"],
+    "roles_url" : ["/assets/roles/placement.png","/assets/roles/entrave.png", "/assets/roles/degats.png"],
+    "logo_url" :"/assets/logo_classes/logo_xelor.png",
+    "skins" : ["/assets/skins/xelor.png"],
+    "description" : "Les Xélors sont des mages qui maîtrisent le temps et toutes les mécaniques qui donnent l'heure : carillons, horloges, et pendules leur obéissent au doigt et à l'œil. Les Xélors jouent donc avec le temps pour ralentir un ennemi ou se téléporter où bon leur semble.",
+    "sorts_principaux" : [
+      {
+      "nom" : "Perturbation",
+      "logo_sort" : "/assets/logo_sort/Xelor/perturbation.png",
+      "cout_pa": 3,
+      "portee" : "1 - 4",
+      "critique" : "10%",
+      "effets": "Téléporte la cible symétriquement par rapport au lanceur et vole de la vie dans l'élément Feu aux ennemis. Peut générer un Téléfrag.",
+        "stats": {
+          "tp": "Téléportation symétrique par rapport au lanceur",
+          "dommages": "14 à 16 (vol Feu)",
+          "critique_dommages": "17 à 19 (vol Feu)"
+        }
+      },
+      {
+      "nom" : "Gelure",
+      "logo_sort" : "/assets/logo_sort/Xelor/gelure.png",
+      "cout_pa": 2,
+      "portee" : "1 - 6 (modifiable)",
+      "critique": "5%",
+      "effets": "Téléporte la cible à sa position précédente et occasionne des dommages Eau aux ennemis. Peut générer un Téléfrag.",
+        "stats": {
+          "tp : ": "Téléporte à la position précédente",
+          "dommages : ": "10 à 12 (Eau)",
+          "dommages_critiques : ": "13 à 15 (Eau)"
+        }
+      },
+      {
+      "nom" : "Souvenir",
+      "logo_sort" : "/assets/logo_sort/Xelor/souvenir.png",
+      "cout_pa": 2,
+      "portee" : "1 - 4 (modifiable)",
+      "critique":"5%",
+      "effets": "Téléporte la cible à sa position précédente et vole de la vie dans l'élément Air aux ennemis. Peut générer un Téléfrag.",
+        "stats": {
+          "tp : ":"Téléporte à la position précédente",
+          "dommages : " :"6 à 8 (vol Air)",
+          "dommages_critiques : ": "9 à 11 (vol Air)"
+        }
+      },
+      {
+      "nom" : "Frappe de Xélor",
+      "logo_sort" : "/assets/logo_sort/Xelor/frappe_de_xelor.png",
+      "cout_pa": 3,
+      "portee" : "1 - 3",
+      "critique":"10%",
+      "effets": "Téléporte la cible symétriquement par rapport au lanceur et occasionne des dommages Terre aux ennemis. Peut générer un Téléfrag.",
+        "stats": {
+          "dommages : ": "13 à 15 (Terre)",
+          "tp : ": "Téléportation symétrique par rapport au lanceur",
+          "dommages_critiques : ":"16 à 18 (Terre)"
+        }
+      },
+      {
+      "nom" : "Complice",
+      "logo_sort" : "/assets/logo_sort/Xelor/complice.png",
+      "cout_pa": 2,
+      "portee" : "1 - 3",
+      "effets": "Invoque un Complice contrôlable qui sert d'obstacle. Le Complice gagne des PM lorsqu'il entre dans l'état Téléfrag. Il renvoie également une partie des dommages qu'il subit par son invocateur aux ennemis en zone autour de lui. Si le Complice du lanceur est encore présent et que celui-ci est ré-invoqué, l'ancien est détruit pour laisser place au nouveau.",
+        "stats": {
+          "invocation : ": "Complice"
+        }
+      }
+    ]
+  }
+]
