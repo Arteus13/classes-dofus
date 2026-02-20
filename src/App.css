@@ -1,4 +1,7 @@
-
+#root {
+  width: 100%;
+  justify-content: center;
+}
 body {
   background-image: url('/assets/backgrounds/dofus_bg.jpg');
   background-size: cover;
