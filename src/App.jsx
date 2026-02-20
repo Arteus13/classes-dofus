@@ -40,7 +40,8 @@ function App() {
             </div>
             <div className="card-body">
               <p className="description">{race.description}</p>
-              <div className="info-row">
+            </div>
+            <div className="info-row">
                 <div className="roles-with-icons">
                   {race.roles.map((role, index) => (
                     <div key={role} className="role-item">
@@ -50,7 +51,6 @@ function App() {
                   ))}
                 </div>
               </div>
-            </div>
             <button className="btn-details" 
               onClick={() => {
                 setOpenSort(null);
