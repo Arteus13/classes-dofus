@@ -1,3 +1,4 @@
+
 body {
   background-image: url('/assets/backgrounds/dofus_bg.jpg');
   background-size: cover;
@@ -82,7 +83,7 @@ h1 {
 
 .roles-with-icons {
   display: flex;
-  gap: 100px;
+  gap: 60px;
 }
 
 .role-item {
@@ -92,8 +93,8 @@ h1 {
 }
 
 .role-icon {
-  width: 100px;      
-  height: 100px;
+  width: 80px;      
+  height: 80px;
   margin-bottom: 4px;
   object-fit: contain;
 }
