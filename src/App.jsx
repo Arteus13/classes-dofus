@@ -42,15 +42,15 @@ function App() {
               <p className="description">{race.description}</p>
             </div>
             <div className="info-row">
-                <div className="roles-with-icons">
-                  {race.roles.map((role, index) => (
-                    <div key={role} className="role-item">
-                      <img src={race.roles_url[index]} alt={role} className="role-icon"/>
-                      <span className="tag">{role}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="roles-with-icons">
+                {race.roles.map((role, index) => (
+                  <div key={role} className="role-item">
+                    <img src={race.roles_url[index]} alt={role} className="role-icon"/>
+                    <span className="tag">{role}</span>
+                  </div>
+                ))}
               </div>
+            </div>
             <button className="btn-details" 
               onClick={() => {
                 setOpenSort(null);
@@ -110,16 +110,20 @@ function App() {
                 ))}
               </div>
               <div className="right-column">
-                <h3>Skins</h3>
-                {selectedClass.skins?.length > 0 ? (
-                  <div className="skins-grid">
-                    {selectedClass.skins.map((skin, index) => (
-                      <img key={index} src={skin} alt="skin" className="skin-img"/>
-                    ))}
-                  </div>
-                ) : (
-                  <p>Aucun skin disponible pour le moment</p>
-                )}
+                <div class="skins-wrapper">
+                  <h3 class="skins-title">Skins</h3> 
+                  <div class="skins-grid">
+                    {selectedClass.skins?.length > 0 ? (
+                    <div className="skins-grid">
+                      {selectedClass.skins.map((skin, index) => (
+                        <img key={index} src={skin} alt="skin" className="skin-img"/>
+                      ))}
+                    </div>
+                  ) : (
+                    <p>Aucun skin disponible pour le moment</p>
+                  )}
+                </div>
+                </div>
               </div>
             </div>
           </div>
