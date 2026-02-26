@@ -1,0 +1,41 @@
+{
+
+  "month": "février 2026",
+  "mostPlayedClass": {
+    "id": 8,
+    "name": "Iop",
+    "logo": "/assets/skins/iop.png",
+    "played_last_month": 14200
+  },
+  "top5": [
+    { "name": "Iop", "played": 14200 },
+    { "name": "Cra", "played": 13100 },
+    { "name": "Eniripsa", "played": 11800 },
+    { "name": "Sacrieur", "played": 11200 },
+    { "name": "Sram", "played": 10800 }
+  ],
+  "globalStats" : {
+    "roleDistribution" : {
+      "damage" : 45,
+      "support" : 30,
+      "tank" : 25,
+      "logo_damage" : "/assets/roles/degats.png",
+      "logo_support" : ["/assets/roles/soins.png", "/assets/roles/entrave.png"],
+      "logo_tank" : "/assets/roles/tank.png"
+    }
+  },
+  "combatStats": {
+  "pvp": {
+    "topClass": "Sram",
+    "winrate": 57
+  },
+  "pvm": {
+    "topClass": "Crâ",
+    "usageRate": 62
+  },
+  "pve": {
+    "topClass": "Eniripsa",
+    "role": "Soutien"
+  }
+}
+}

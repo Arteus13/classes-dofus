@@ -6,17 +6,45 @@ body {
   color: #fff;
 }
 
-h1 {
+/* ================================
+   TITRES
+   ================================ */
+
+/* On supprime le h1 global pour éviter les conflits */
+/* h1 { ... }  → supprimé */
+
+.accueil-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.accueil-header h1 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 30px;      /* ← tu le récupères enfin */
+  margin-bottom: 25px;
   font-size: 2.8rem;
   letter-spacing: 2px;
   text-shadow: 0 0 10px rgba(255,255,255,0.4);
+  width: 100%;
 }
+
+.classes-title {
+  text-align: center;
+  margin-top: 30px;      /* ← tu le récupères enfin */
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.4);
+  width: 100%;
+}
+
+/* ================================
+   GRID DES CARTES
+   ================================ */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   padding: 40px;
 }
@@ -37,14 +65,12 @@ h1 {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 20px rgba(150, 80, 255, 0.4);
 }
 
 .card-header {
-
   text-align: center;
 }
 
@@ -66,14 +92,13 @@ h1 {
   line-height: 1.4;
 }
 
-  .roles-with-icons {
+.roles-with-icons {
   margin-bottom: auto;
-  display :flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
-
 
 .role-item {
   display: flex;
@@ -100,12 +125,15 @@ h1 {
   font-weight: bold;
   cursor: pointer;
   transition: opacity 0.2s ease;
-  bottom: 0.1vh;
 }
 
 .btn-details:hover {
   opacity: 0.85;
 }
+
+/* ================================
+   MODAL
+   ================================ */
 
 .modal-overlay {
   position: fixed;
@@ -175,6 +203,10 @@ h1 {
   flex: 1;
 }
 
+/* ================================
+   SORTS & SKINS
+   ================================ */
+
 .sort-item {
   background: rgba(255,255,255,0.05);
   padding: 12px;
@@ -182,22 +214,6 @@ h1 {
   margin-bottom: 12px;
   cursor: pointer;
   transition: background 0.2s ease;
-}
-
-.skins-wrapper {
-  border: 1px solid rgba(255,255,255,0.15);
-  padding: 15px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.03);
-}
-
-.skins-title {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-shadow: 0 0 6px rgba(255,255,255,0.3);
 }
 
 .sort-item:hover {
@@ -224,6 +240,22 @@ h1 {
   display: block;
 }
 
+.skins-wrapper {
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+}
+
+.skins-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(255,255,255,0.3);
+}
+
 .skins-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -246,7 +278,197 @@ h1 {
   margin-left: 4px;
 }
 
+/* ================================
+   PAGE D’ACCUEIL — WIDGET
+   ================================ */
 
+.accueil-page-container {
+  width: 200vh;
+  min-height: 100vh;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accueil-widgets-grid {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.accueil-card {
+  background: rgba(20, 20, 35, 0.75);
+  border-radius: 15px;
+  padding: 25px;
+  width: 320px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-left: 25px;
+}
+
+.accueil-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(150, 80, 255, 0.4);
+}
+
+.accueil-card-title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.3);
+}
+
+.accueil-card-body {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.accueil-card-skin {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.accueil-card-roles {
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+}
+.accueil-class-name {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.accueil-player-count {
+  margin-top: 6px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.accueil-extra-stat {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.accueil-extra-row {
+  display: flex; 
+  gap: 8px; /* espace horizontal entre label et valeur */ 
+  margin-bottom: 6px; /* espace vertical entre les lignes */
+}
+
+.accueil-extra-label {
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.accueil-extra-value {
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.accueil-legende-logo {
+  width: 120px;        /* augmente la taille du logo */
+  height: auto;        /* garde les proportions */
+  display: block;      /* évite les espaces indésirables */
+  margin: 0 auto 1rem; /* centre le logo + espace sous le logo */
+}
+
+
+/* ================================
+   HEADER + NAVIGATION
+   ================================ */
+
+header {
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(15, 15, 30, 0.75);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap : 50px;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(255,255,255,0.3);
+  transition: opacity 0.2s ease;
+}
+
+.site-title:hover {
+  opacity: 0.85;
+}
+
+.logo-header img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.logo-header img:hover {
+  transform: scale(1.1);
+}
+
+/* ================================
+   CONTENEUR PRINCIPAL
+   ================================ */
+
+.main-container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* ================================
+   RESPONSIVE
+   ================================ */
 
 @media (max-width: 900px) {
   .details-layout {
@@ -258,18 +480,15 @@ h1 {
   }
 }
 
-
-
 @media (max-width: 600px) {
-  h1 {
+  .page-content h1 {
     font-size: 2rem;
   }
 
   .grid { 
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      padding: 20px;
+    gap: 25px;
+    padding: 20px;
   }
 
   .card {
@@ -294,26 +513,38 @@ h1 {
 
   .details-panel {
     padding: 8px; 
-    font-size: 0.9rem;  }
+    font-size: 0.9rem;
+  }
 
   .btn-close {
     font-size: 1.3rem;
   }
 
   .skins-wrapper { 
-    border: 1px solid rgba(255,255,255,0.15); 
     padding: 12px; 
     border-radius: 10px; 
-    background: rgba(255,255,255,0.03); 
     margin-top: 15px; 
   }
 
   .skins-title { 
-    text-align: center;
-    margin-bottom: 12px;
     font-size: 1.05rem; 
-    letter-spacing: 1px; 
-    font-weight: 600; 
-    text-shadow: 0 0 6px rgba(255,255,255,0.3); 
+  }
+
+  .accueil-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .accueil-card-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .accueil-card-title {
+    font-size: 1.2rem;
+  }
+
+  .accueil-class-name {
+    font-size: 1.1rem;
   }
 }
